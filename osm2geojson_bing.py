@@ -9,7 +9,7 @@ def geojson_write(geosjon, outfile_name):
 	print('end of osm2geojson')
 
 # read the overpass data and separate into nodes and links
-overpass_f = 'query_turin.osm'
+overpass_f = 'target_turin.osm'
 data = json.load(open(overpass_f))
 print(len(data))
 elements = data['elements']
