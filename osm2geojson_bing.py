@@ -8,9 +8,7 @@ def geojson_write(geosjon, outfile_name):
 		json.dump(geosjon, outfile, indent=2)
 	print('end of osm2geojson')
 
-# read the overpass data and separate into nodes and links
-overpass_f = 'target_turin.osm'
-data = json.load(open(overpass_f))
+
 print(len(data))
 elements = data['elements']
 node_elements = []
